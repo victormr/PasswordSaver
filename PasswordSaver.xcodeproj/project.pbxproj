@@ -1,0 +1,948 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D45B242700483A74E8268DFC /* Pods_PasswordSaverTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48C49B51FFCC94C06FB27E6 /* Pods_PasswordSaverTests.framework */; };
+		D7062AC92025426700977722 /* InputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7062AC82025426700977722 /* InputTableViewCell.swift */; };
+		D7062ACB2025427900977722 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7062ACA2025427900977722 /* ButtonTableViewCell.swift */; };
+		D7062ACD202566BA00977722 /* PasswordNeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7062ACC202566BA00977722 /* PasswordNeedTableViewCell.swift */; };
+		D7062ACF202574E300977722 /* SavedPasswordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7062ACE202574E300977722 /* SavedPasswordTableViewCell.swift */; };
+		D7062AD12025782F00977722 /* SavedPasswordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7062AD02025782F00977722 /* SavedPasswordModel.swift */; };
+		D70BC87BEC7BC950579FB6AA /* Pods_PasswordSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CD619249B5F306727FAEC4 /* Pods_PasswordSaver.framework */; };
+		D7429290202BEA48005FCE00 /* ModalAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D742928F202BEA48005FCE00 /* ModalAnimation.swift */; };
+		D7502922202A47E20001E7D8 /* CubeAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7502921202A47E20001E7D8 /* CubeAnimationController.swift */; };
+		D7502925202A488C0001E7D8 /* SwipeInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7502924202A488C0001E7D8 /* SwipeInteractionController.swift */; };
+		D75ADDF72025879D0080D4D5 /* NewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75ADDF62025879D0080D4D5 /* NewPasswordViewController.swift */; };
+		D75ADDFB2025F1760080D4D5 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75ADDFA2025F1760080D4D5 /* RoundedButton.swift */; };
+		D75ADDFE2025F4DC0080D4D5 /* PasswordDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75ADDFD2025F4DC0080D4D5 /* PasswordDetailsViewController.swift */; };
+		D75ADE04202623FF0080D4D5 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75ADE03202623FF0080D4D5 /* LoginService.swift */; };
+		D75ADE062026240E0080D4D5 /* RegisterServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75ADE052026240E0080D4D5 /* RegisterServices.swift */; };
+		D75ADE082026242D0080D4D5 /* PasswordSaveServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75ADE072026242D0080D4D5 /* PasswordSaveServices.swift */; };
+		D75ADE0C202636CE0080D4D5 /* UserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75ADE0B202636CE0080D4D5 /* UserInfoModel.swift */; };
+		D75ADE0E20273A660080D4D5 /* SavedPasswordListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75ADE0D20273A660080D4D5 /* SavedPasswordListModel.swift */; };
+		D75ADE10202746CC0080D4D5 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75ADE0F202746CC0080D4D5 /* Keychain.swift */; };
+		D75ADE1520293E620080D4D5 /* SavedPasswordListModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75ADE1420293E620080D4D5 /* SavedPasswordListModelTests.swift */; };
+		D75ADE17202947620080D4D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D75ADE16202947620080D4D5 /* Assets.xcassets */; };
+		D75ADE192029512C0080D4D5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75ADE182029512C0080D4D5 /* BaseViewController.swift */; };
+		D7D829B62023C5F500D389B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D829B52023C5F500D389B0 /* AppDelegate.swift */; };
+		D7D829B82023C5F500D389B0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D829B72023C5F500D389B0 /* LoginViewController.swift */; };
+		D7D829BB2023C5F500D389B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7D829B92023C5F500D389B0 /* Main.storyboard */; };
+		D7D829C02023C5F500D389B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7D829BE2023C5F500D389B0 /* LaunchScreen.storyboard */; };
+		D7D829D62023C5F500D389B0 /* PasswordSaverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D829D52023C5F500D389B0 /* PasswordSaverUITests.swift */; };
+		D7D829EC2023CFA800D389B0 /* PasswordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D829EB2023CFA800D389B0 /* PasswordListViewController.swift */; };
+		D7F4A2182023E600003DCEC8 /* UserRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F4A2172023E600003DCEC8 /* UserRegisterViewController.swift */; };
+		F1BC071499BC3C5D6D3F73F4 /* Pods_PasswordSaverUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D49F7EA6020D70917486FCA2 /* Pods_PasswordSaverUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D7D829C72023C5F500D389B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7D829AA2023C5F500D389B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7D829B12023C5F500D389B0;
+			remoteInfo = PasswordSaver;
+		};
+		D7D829D22023C5F500D389B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7D829AA2023C5F500D389B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7D829B12023C5F500D389B0;
+			remoteInfo = PasswordSaver;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4DD7F92A7860450646F65A99 /* Pods-PasswordSaverUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordSaverUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PasswordSaverUITests/Pods-PasswordSaverUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6E46DB28255499780C62CF23 /* Pods-PasswordSaver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordSaver.release.xcconfig"; path = "Pods/Target Support Files/Pods-PasswordSaver/Pods-PasswordSaver.release.xcconfig"; sourceTree = "<group>"; };
+		76A83A1FE923BD5B0D344000 /* Pods-PasswordSaverTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordSaverTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PasswordSaverTests/Pods-PasswordSaverTests.release.xcconfig"; sourceTree = "<group>"; };
+		89CD619249B5F306727FAEC4 /* Pods_PasswordSaver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PasswordSaver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91A6AD193B9D63A547A44BA5 /* Pods-PasswordSaverTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordSaverTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PasswordSaverTests/Pods-PasswordSaverTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B48C49B51FFCC94C06FB27E6 /* Pods_PasswordSaverTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PasswordSaverTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C850C5F2BA8E12E4E7383649 /* Pods-PasswordSaverUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordSaverUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PasswordSaverUITests/Pods-PasswordSaverUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D1AC90EC332FC0F91697B94A /* Pods-PasswordSaver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordSaver.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PasswordSaver/Pods-PasswordSaver.debug.xcconfig"; sourceTree = "<group>"; };
+		D49F7EA6020D70917486FCA2 /* Pods_PasswordSaverUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PasswordSaverUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7062AC82025426700977722 /* InputTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTableViewCell.swift; sourceTree = "<group>"; };
+		D7062ACA2025427900977722 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
+		D7062ACC202566BA00977722 /* PasswordNeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordNeedTableViewCell.swift; sourceTree = "<group>"; };
+		D7062ACE202574E300977722 /* SavedPasswordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPasswordTableViewCell.swift; sourceTree = "<group>"; };
+		D7062AD02025782F00977722 /* SavedPasswordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPasswordModel.swift; sourceTree = "<group>"; };
+		D742928F202BEA48005FCE00 /* ModalAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalAnimation.swift; sourceTree = "<group>"; };
+		D7502921202A47E20001E7D8 /* CubeAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeAnimationController.swift; sourceTree = "<group>"; };
+		D7502924202A488C0001E7D8 /* SwipeInteractionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeInteractionController.swift; sourceTree = "<group>"; };
+		D75ADDF62025879D0080D4D5 /* NewPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordViewController.swift; sourceTree = "<group>"; };
+		D75ADDFA2025F1760080D4D5 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		D75ADDFD2025F4DC0080D4D5 /* PasswordDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordDetailsViewController.swift; sourceTree = "<group>"; };
+		D75ADE03202623FF0080D4D5 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		D75ADE052026240E0080D4D5 /* RegisterServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterServices.swift; sourceTree = "<group>"; };
+		D75ADE072026242D0080D4D5 /* PasswordSaveServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSaveServices.swift; sourceTree = "<group>"; };
+		D75ADE0B202636CE0080D4D5 /* UserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoModel.swift; sourceTree = "<group>"; };
+		D75ADE0D20273A660080D4D5 /* SavedPasswordListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPasswordListModel.swift; sourceTree = "<group>"; };
+		D75ADE0F202746CC0080D4D5 /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		D75ADE1420293E620080D4D5 /* SavedPasswordListModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPasswordListModelTests.swift; sourceTree = "<group>"; };
+		D75ADE16202947620080D4D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D75ADE182029512C0080D4D5 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		D7D829B22023C5F500D389B0 /* PasswordSaver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordSaver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7D829B52023C5F500D389B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D7D829B72023C5F500D389B0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D7D829BA2023C5F500D389B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D7D829BF2023C5F500D389B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D7D829C12023C5F500D389B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7D829C62023C5F500D389B0 /* PasswordSaverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PasswordSaverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7D829CC2023C5F500D389B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7D829D12023C5F500D389B0 /* PasswordSaverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PasswordSaverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7D829D52023C5F500D389B0 /* PasswordSaverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSaverUITests.swift; sourceTree = "<group>"; };
+		D7D829D72023C5F500D389B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7D829EB2023CFA800D389B0 /* PasswordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordListViewController.swift; sourceTree = "<group>"; };
+		D7F4A2172023E600003DCEC8 /* UserRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegisterViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7D829AF2023C5F500D389B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D70BC87BEC7BC950579FB6AA /* Pods_PasswordSaver.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7D829C32023C5F500D389B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D45B242700483A74E8268DFC /* Pods_PasswordSaverTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7D829CE2023C5F500D389B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1BC071499BC3C5D6D3F73F4 /* Pods_PasswordSaverUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		98ED0E1710B2442E8BD5D8F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D1AC90EC332FC0F91697B94A /* Pods-PasswordSaver.debug.xcconfig */,
+				6E46DB28255499780C62CF23 /* Pods-PasswordSaver.release.xcconfig */,
+				91A6AD193B9D63A547A44BA5 /* Pods-PasswordSaverTests.debug.xcconfig */,
+				76A83A1FE923BD5B0D344000 /* Pods-PasswordSaverTests.release.xcconfig */,
+				4DD7F92A7860450646F65A99 /* Pods-PasswordSaverUITests.debug.xcconfig */,
+				C850C5F2BA8E12E4E7383649 /* Pods-PasswordSaverUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D7062AC72025423B00977722 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D7062AC82025426700977722 /* InputTableViewCell.swift */,
+				D7062ACA2025427900977722 /* ButtonTableViewCell.swift */,
+				D7062ACC202566BA00977722 /* PasswordNeedTableViewCell.swift */,
+				D7062ACE202574E300977722 /* SavedPasswordTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D7502920202A47C40001E7D8 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				D7502921202A47E20001E7D8 /* CubeAnimationController.swift */,
+				D742928F202BEA48005FCE00 /* ModalAnimation.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		D7502923202A486C0001E7D8 /* InteractiveAnimationControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D7502924202A488C0001E7D8 /* SwipeInteractionController.swift */,
+			);
+			path = InteractiveAnimationControllers;
+			sourceTree = "<group>";
+		};
+		D75ADDF52025877D0080D4D5 /* NewPassword */ = {
+			isa = PBXGroup;
+			children = (
+				D75ADDF62025879D0080D4D5 /* NewPasswordViewController.swift */,
+			);
+			path = NewPassword;
+			sourceTree = "<group>";
+		};
+		D75ADDF82025F13C0080D4D5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D7502923202A486C0001E7D8 /* InteractiveAnimationControllers */,
+				D7502920202A47C40001E7D8 /* Animations */,
+				D75ADDF92025F14D0080D4D5 /* View */,
+				D75ADE0F202746CC0080D4D5 /* Keychain.swift */,
+				D75ADE182029512C0080D4D5 /* BaseViewController.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D75ADDF92025F14D0080D4D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D75ADDFA2025F1760080D4D5 /* RoundedButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D75ADDFC2025F4BD0080D4D5 /* PasswordDetails */ = {
+			isa = PBXGroup;
+			children = (
+				D75ADDFD2025F4DC0080D4D5 /* PasswordDetailsViewController.swift */,
+			);
+			path = PasswordDetails;
+			sourceTree = "<group>";
+		};
+		D75ADE11202935660080D4D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D75ADE1420293E620080D4D5 /* SavedPasswordListModelTests.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D7D829A92023C5F500D389B0 = {
+			isa = PBXGroup;
+			children = (
+				D7D829B42023C5F500D389B0 /* PasswordSaver */,
+				D7D829C92023C5F500D389B0 /* PasswordSaverTests */,
+				D7D829D42023C5F500D389B0 /* PasswordSaverUITests */,
+				D7D829B32023C5F500D389B0 /* Products */,
+				98ED0E1710B2442E8BD5D8F8 /* Pods */,
+				D80E40E9899D24B3750EBF12 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D7D829B32023C5F500D389B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7D829B22023C5F500D389B0 /* PasswordSaver.app */,
+				D7D829C62023C5F500D389B0 /* PasswordSaverTests.xctest */,
+				D7D829D12023C5F500D389B0 /* PasswordSaverUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7D829B42023C5F500D389B0 /* PasswordSaver */ = {
+			isa = PBXGroup;
+			children = (
+				D75ADE16202947620080D4D5 /* Assets.xcassets */,
+				D75ADDF82025F13C0080D4D5 /* Utils */,
+				D7D829E82023CF0700D389B0 /* Services */,
+				D7D829E72023CEFC00D389B0 /* Models */,
+				D7D829E32023CE9300D389B0 /* View */,
+				D7D829B52023C5F500D389B0 /* AppDelegate.swift */,
+				D7D829BE2023C5F500D389B0 /* LaunchScreen.storyboard */,
+				D7D829C12023C5F500D389B0 /* Info.plist */,
+			);
+			path = PasswordSaver;
+			sourceTree = "<group>";
+		};
+		D7D829C92023C5F500D389B0 /* PasswordSaverTests */ = {
+			isa = PBXGroup;
+			children = (
+				D75ADE11202935660080D4D5 /* Model */,
+				D7D829CC2023C5F500D389B0 /* Info.plist */,
+			);
+			path = PasswordSaverTests;
+			sourceTree = "<group>";
+		};
+		D7D829D42023C5F500D389B0 /* PasswordSaverUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D7D829D52023C5F500D389B0 /* PasswordSaverUITests.swift */,
+				D7D829D72023C5F500D389B0 /* Info.plist */,
+			);
+			path = PasswordSaverUITests;
+			sourceTree = "<group>";
+		};
+		D7D829E32023CE9300D389B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D75ADDFC2025F4BD0080D4D5 /* PasswordDetails */,
+				D75ADDF52025877D0080D4D5 /* NewPassword */,
+				D7062AC72025423B00977722 /* Cells */,
+				D7F4A2142023E474003DCEC8 /* Register */,
+				D7D829EA2023CF8C00D389B0 /* PasswordList */,
+				D7D829E92023CF7D00D389B0 /* Login */,
+				D7D829B92023C5F500D389B0 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D7D829E72023CEFC00D389B0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D7062AD02025782F00977722 /* SavedPasswordModel.swift */,
+				D75ADE0B202636CE0080D4D5 /* UserInfoModel.swift */,
+				D75ADE0D20273A660080D4D5 /* SavedPasswordListModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D7D829E82023CF0700D389B0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D75ADE03202623FF0080D4D5 /* LoginService.swift */,
+				D75ADE052026240E0080D4D5 /* RegisterServices.swift */,
+				D75ADE072026242D0080D4D5 /* PasswordSaveServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D7D829E92023CF7D00D389B0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D7D829B72023C5F500D389B0 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D7D829EA2023CF8C00D389B0 /* PasswordList */ = {
+			isa = PBXGroup;
+			children = (
+				D7D829EB2023CFA800D389B0 /* PasswordListViewController.swift */,
+			);
+			path = PasswordList;
+			sourceTree = "<group>";
+		};
+		D7F4A2142023E474003DCEC8 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				D7F4A2172023E600003DCEC8 /* UserRegisterViewController.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		D80E40E9899D24B3750EBF12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89CD619249B5F306727FAEC4 /* Pods_PasswordSaver.framework */,
+				B48C49B51FFCC94C06FB27E6 /* Pods_PasswordSaverTests.framework */,
+				D49F7EA6020D70917486FCA2 /* Pods_PasswordSaverUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7D829B12023C5F500D389B0 /* PasswordSaver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7D829DA2023C5F500D389B0 /* Build configuration list for PBXNativeTarget "PasswordSaver" */;
+			buildPhases = (
+				9F82A612124398F6AC5A9DD8 /* [CP] Check Pods Manifest.lock */,
+				D7D829AE2023C5F500D389B0 /* Sources */,
+				D7D829AF2023C5F500D389B0 /* Frameworks */,
+				D7D829B02023C5F500D389B0 /* Resources */,
+				B8CD7CBA852ABBC3726C8BAB /* [CP] Embed Pods Frameworks */,
+				4636413B1367FAACFA640FDA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PasswordSaver;
+			productName = PasswordSaver;
+			productReference = D7D829B22023C5F500D389B0 /* PasswordSaver.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D7D829C52023C5F500D389B0 /* PasswordSaverTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7D829DD2023C5F500D389B0 /* Build configuration list for PBXNativeTarget "PasswordSaverTests" */;
+			buildPhases = (
+				EFDE6D002F22043B14A8137B /* [CP] Check Pods Manifest.lock */,
+				D7D829C22023C5F500D389B0 /* Sources */,
+				D7D829C32023C5F500D389B0 /* Frameworks */,
+				D7D829C42023C5F500D389B0 /* Resources */,
+				91D6E01C67BA63D25E567E9E /* [CP] Embed Pods Frameworks */,
+				210FEFC00F44F26FD5E4A1CC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7D829C82023C5F500D389B0 /* PBXTargetDependency */,
+			);
+			name = PasswordSaverTests;
+			productName = PasswordSaverTests;
+			productReference = D7D829C62023C5F500D389B0 /* PasswordSaverTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D7D829D02023C5F500D389B0 /* PasswordSaverUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7D829E02023C5F500D389B0 /* Build configuration list for PBXNativeTarget "PasswordSaverUITests" */;
+			buildPhases = (
+				E1C7963A545EB7EB1A28C07E /* [CP] Check Pods Manifest.lock */,
+				D7D829CD2023C5F500D389B0 /* Sources */,
+				D7D829CE2023C5F500D389B0 /* Frameworks */,
+				D7D829CF2023C5F500D389B0 /* Resources */,
+				DEDBF41AE6582F292A1212E0 /* [CP] Embed Pods Frameworks */,
+				CD56243011C63F132066D9D5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7D829D32023C5F500D389B0 /* PBXTargetDependency */,
+			);
+			name = PasswordSaverUITests;
+			productName = PasswordSaverUITests;
+			productReference = D7D829D12023C5F500D389B0 /* PasswordSaverUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7D829AA2023C5F500D389B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Victor Martins Rabelo";
+				TargetAttributes = {
+					D7D829B12023C5F500D389B0 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					D7D829C52023C5F500D389B0 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D7D829B12023C5F500D389B0;
+					};
+					D7D829D02023C5F500D389B0 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D7D829B12023C5F500D389B0;
+					};
+				};
+			};
+			buildConfigurationList = D7D829AD2023C5F500D389B0 /* Build configuration list for PBXProject "PasswordSaver" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D7D829A92023C5F500D389B0;
+			productRefGroup = D7D829B32023C5F500D389B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7D829B12023C5F500D389B0 /* PasswordSaver */,
+				D7D829C52023C5F500D389B0 /* PasswordSaverTests */,
+				D7D829D02023C5F500D389B0 /* PasswordSaverUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7D829B02023C5F500D389B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7D829C02023C5F500D389B0 /* LaunchScreen.storyboard in Resources */,
+				D75ADE17202947620080D4D5 /* Assets.xcassets in Resources */,
+				D7D829BB2023C5F500D389B0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7D829C42023C5F500D389B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7D829CF2023C5F500D389B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		210FEFC00F44F26FD5E4A1CC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PasswordSaverTests/Pods-PasswordSaverTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4636413B1367FAACFA640FDA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PasswordSaver/Pods-PasswordSaver-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91D6E01C67BA63D25E567E9E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PasswordSaverTests/Pods-PasswordSaverTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F82A612124398F6AC5A9DD8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B8CD7CBA852ABBC3726C8BAB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PasswordSaver/Pods-PasswordSaver-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD56243011C63F132066D9D5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PasswordSaverUITests/Pods-PasswordSaverUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEDBF41AE6582F292A1212E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PasswordSaverUITests/Pods-PasswordSaverUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1C7963A545EB7EB1A28C07E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EFDE6D002F22043B14A8137B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7D829AE2023C5F500D389B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7F4A2182023E600003DCEC8 /* UserRegisterViewController.swift in Sources */,
+				D75ADE04202623FF0080D4D5 /* LoginService.swift in Sources */,
+				D7D829B82023C5F500D389B0 /* LoginViewController.swift in Sources */,
+				D75ADE0E20273A660080D4D5 /* SavedPasswordListModel.swift in Sources */,
+				D75ADE192029512C0080D4D5 /* BaseViewController.swift in Sources */,
+				D75ADDFE2025F4DC0080D4D5 /* PasswordDetailsViewController.swift in Sources */,
+				D75ADE10202746CC0080D4D5 /* Keychain.swift in Sources */,
+				D75ADE0C202636CE0080D4D5 /* UserInfoModel.swift in Sources */,
+				D7D829EC2023CFA800D389B0 /* PasswordListViewController.swift in Sources */,
+				D7502925202A488C0001E7D8 /* SwipeInteractionController.swift in Sources */,
+				D7429290202BEA48005FCE00 /* ModalAnimation.swift in Sources */,
+				D7062ACF202574E300977722 /* SavedPasswordTableViewCell.swift in Sources */,
+				D7062ACD202566BA00977722 /* PasswordNeedTableViewCell.swift in Sources */,
+				D7062AC92025426700977722 /* InputTableViewCell.swift in Sources */,
+				D75ADDFB2025F1760080D4D5 /* RoundedButton.swift in Sources */,
+				D7062ACB2025427900977722 /* ButtonTableViewCell.swift in Sources */,
+				D7062AD12025782F00977722 /* SavedPasswordModel.swift in Sources */,
+				D75ADE082026242D0080D4D5 /* PasswordSaveServices.swift in Sources */,
+				D75ADDF72025879D0080D4D5 /* NewPasswordViewController.swift in Sources */,
+				D7502922202A47E20001E7D8 /* CubeAnimationController.swift in Sources */,
+				D75ADE062026240E0080D4D5 /* RegisterServices.swift in Sources */,
+				D7D829B62023C5F500D389B0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7D829C22023C5F500D389B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D75ADE1520293E620080D4D5 /* SavedPasswordListModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7D829CD2023C5F500D389B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7D829D62023C5F500D389B0 /* PasswordSaverUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D7D829C82023C5F500D389B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7D829B12023C5F500D389B0 /* PasswordSaver */;
+			targetProxy = D7D829C72023C5F500D389B0 /* PBXContainerItemProxy */;
+		};
+		D7D829D32023C5F500D389B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7D829B12023C5F500D389B0 /* PasswordSaver */;
+			targetProxy = D7D829D22023C5F500D389B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D7D829B92023C5F500D389B0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7D829BA2023C5F500D389B0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D7D829BE2023C5F500D389B0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7D829BF2023C5F500D389B0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D7D829D82023C5F500D389B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D7D829D92023C5F500D389B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7D829DB2023C5F500D389B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1AC90EC332FC0F91697B94A /* Pods-PasswordSaver.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J73FLPX24B;
+				INFOPLIST_FILE = PasswordSaver/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Victor.PasswordSaver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D7D829DC2023C5F500D389B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E46DB28255499780C62CF23 /* Pods-PasswordSaver.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J73FLPX24B;
+				INFOPLIST_FILE = PasswordSaver/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Victor.PasswordSaver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D7D829DE2023C5F500D389B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91A6AD193B9D63A547A44BA5 /* Pods-PasswordSaverTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J73FLPX24B;
+				INFOPLIST_FILE = PasswordSaverTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Victor.PasswordSaverTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PasswordSaver.app/PasswordSaver";
+			};
+			name = Debug;
+		};
+		D7D829DF2023C5F500D389B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76A83A1FE923BD5B0D344000 /* Pods-PasswordSaverTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J73FLPX24B;
+				INFOPLIST_FILE = PasswordSaverTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Victor.PasswordSaverTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PasswordSaver.app/PasswordSaver";
+			};
+			name = Release;
+		};
+		D7D829E12023C5F500D389B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DD7F92A7860450646F65A99 /* Pods-PasswordSaverUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J73FLPX24B;
+				INFOPLIST_FILE = PasswordSaverUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Victor.PasswordSaverUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PasswordSaver;
+			};
+			name = Debug;
+		};
+		D7D829E22023C5F500D389B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C850C5F2BA8E12E4E7383649 /* Pods-PasswordSaverUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J73FLPX24B;
+				INFOPLIST_FILE = PasswordSaverUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Victor.PasswordSaverUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PasswordSaver;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7D829AD2023C5F500D389B0 /* Build configuration list for PBXProject "PasswordSaver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7D829D82023C5F500D389B0 /* Debug */,
+				D7D829D92023C5F500D389B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7D829DA2023C5F500D389B0 /* Build configuration list for PBXNativeTarget "PasswordSaver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7D829DB2023C5F500D389B0 /* Debug */,
+				D7D829DC2023C5F500D389B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7D829DD2023C5F500D389B0 /* Build configuration list for PBXNativeTarget "PasswordSaverTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7D829DE2023C5F500D389B0 /* Debug */,
+				D7D829DF2023C5F500D389B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7D829E02023C5F500D389B0 /* Build configuration list for PBXNativeTarget "PasswordSaverUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7D829E12023C5F500D389B0 /* Debug */,
+				D7D829E22023C5F500D389B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7D829AA2023C5F500D389B0 /* Project object */;
+}
